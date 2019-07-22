@@ -75,7 +75,7 @@ let styles = StyleSheet.create({
         flexDirection: 'column',
         width: width,
         alignItems: 'center',
-        backgroundColor: '#fff'
+        backgroundColor: 'blue'
     },
     bannerTitle: {
         marginTop: UtilHelper.getRealHeight(height, 150),
