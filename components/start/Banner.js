@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { Text, View, Image, ScrollView, Dimensions, StyleSheet } from 'react-native'
+import { Text, View, Image, ScrollView, TouchableHighlight ,Dimensions, StyleSheet } from 'react-native'
+import { withNavigation } from 'react-navigation';
 import UtilHelper from '../../util/Util'
 
 let { width, height } = Dimensions.get('window');
 
-export default class Banner extends Component {
+class Banner extends Component {
 
     state = {
         curIndex: 0,
@@ -58,13 +59,16 @@ export default class Banner extends Component {
                     <Text style={styles.bannerTitle}>会员专享福利</Text>
                     <Text style={styles.bannerDescribe}>更多特惠 提前开抢</Text>
                     <Image style={styles.bannerImg} source={require('../../assest/img.png')}></Image>
+                    <TouchableHighlight style={styles.bannerButton} onPress={() => {
+                        this.props.navigation.replace('Home')
+                    }}>
+                        <Text style={{color: '#fff'}}>立即开始</Text>
+                    </TouchableHighlight>
                 </View>
             </ScrollView>
         )
     }
 }
-
-
 
 let styles = StyleSheet.create({
     bannerMainContainer: {
@@ -75,7 +79,7 @@ let styles = StyleSheet.create({
         flexDirection: 'column',
         width: width,
         alignItems: 'center',
-        backgroundColor: 'blue'
+        backgroundColor: '#fff'
     },
     bannerTitle: {
         marginTop: UtilHelper.getRealHeight(height, 150),
@@ -88,5 +92,15 @@ let styles = StyleSheet.create({
     },
     bannerImg: {
         marginTop: UtilHelper.getRealHeight(height, 30),
+    },
+    bannerButton: {
+        justifyContent: 'center',
+        alignItems:'center',
+        width: UtilHelper.getRealWidth(width, 120),
+        height: 40,
+        borderRadius: 5,
+        backgroundColor: 'rgb(26, 188, 156)'
     }
 })
+
+export default withNavigation(Banner)
