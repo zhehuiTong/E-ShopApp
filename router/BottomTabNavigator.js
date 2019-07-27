@@ -1,16 +1,17 @@
 import React from 'react';
 import { Image, View, Text } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
-import HomePage from '../view/HomePage'
-import Classification from '../view/Classification'
-import Special from '../view/Special'
-import Evaluate from '../view/Evaluate'
-import My from '../view/My'
+import HomePage from '../view/Home/HomePage'
+import Classification from '../view/Home/Classification'
+import Special from '../view/Home/Special'
+import Evaluate from '../view/Home/Evaluate'
+import My from '../view/Home/My'
 
 export default createBottomTabNavigator(
     {
         Home: {
             screen: HomePage,
+            params: { title: '首页' },
             navigationOptions: {
                 tabBarLabel: '首页',
                 tabBarIcon: ({focused, tintColor}) => (
@@ -20,6 +21,7 @@ export default createBottomTabNavigator(
         },
         Classification:{
             screen: Classification,
+            params: { title: '分类' },
             navigationOptions: {
                 tabBarLabel: '分类',
                 tabBarIcon: ({focused, tintColor}) => (
@@ -29,6 +31,7 @@ export default createBottomTabNavigator(
         },
         Special: {
             screen: Special,
+            params: { title: '专题' },
             navigationOptions: {
                 tabBarLabel: '专题',
                 tabBarIcon: ({focused, tintColor}) => (
@@ -38,6 +41,7 @@ export default createBottomTabNavigator(
         },
         Evaluate: {
             screen: Evaluate,
+            params: { title: '评价' },
             navigationOptions: {
                 tabBarLabel: '评价',
                 tabBarIcon: ({focused, tintColor}) => (
@@ -47,6 +51,7 @@ export default createBottomTabNavigator(
         },
         My: {
             screen: My,
+            params: { title: '我的' },
             navigationOptions: {
                 tabBarLabel: '我的',
                 tabBarIcon: ({focused, tintColor}) => (
