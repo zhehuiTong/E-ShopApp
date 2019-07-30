@@ -6,10 +6,10 @@ export default class HomeHeaderRight extends Component {
         return (
             <View style={styles.headerRightContainer}>
                 <TouchableNativeFeedback>
-                    <Image style={{ width: 30, height: 30, marginLeft: 20 }} source={require('../../assest/搜索.png')}></Image>
+                    <Image style={{ width: 30, height: 30, marginLeft: 20 }} source={require('../../assest/search.png')}></Image>
                 </TouchableNativeFeedback>
                 <TouchableNativeFeedback>
-                    <Image style={{ width: 30, height: 30, marginLeft: 20 }} source={require('../../assest/购物车满.png')}></Image>
+                    <Image style={{ width: 30, height: 30, marginLeft: 20 }} source={require('../../assest/shop.png')}></Image>
                 </TouchableNativeFeedback>
             </View>
         )

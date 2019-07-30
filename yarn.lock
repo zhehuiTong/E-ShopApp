@@ -4959,6 +4959,13 @@ react-native-safe-area-view@^0.14.1:
   dependencies:
     debounce "^1.2.0"
 
+react-native-swiper@^1.5.14:
+  version "1.5.14"
+  resolved "https://registry.npm.taobao.org/react-native-swiper/download/react-native-swiper-1.5.14.tgz#1c6f949ca377186300f972bb0f30d24062c899aa"
+  integrity sha1-HG+UnKN3GGMA+XK7DzDSQGLImao=
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-tab-view@^1.2.0, react-native-tab-view@^1.4.1:
   version "1.4.1"
   resolved "https://registry.npm.taobao.org/react-native-tab-view/download/react-native-tab-view-1.4.1.tgz#f113cd87485808f0c991abec937f70fa380478b9"

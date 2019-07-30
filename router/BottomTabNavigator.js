@@ -15,7 +15,7 @@ export default createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '首页',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/首页.png')}></Image>
+                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/home.png')}></Image>
                 )
             }
         },
@@ -25,7 +25,7 @@ export default createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '分类',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/类目.png')}></Image>
+                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/class.png')}></Image>
                 )
             }
         },
@@ -35,7 +35,7 @@ export default createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '专题',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/咖啡.png')}></Image>
+                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/coffer.png')}></Image>
                 )
             }
         },
@@ -45,7 +45,7 @@ export default createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '评价',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/评价星星.png')}></Image>
+                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/evaluate.png')}></Image>
                 )
             }
         },
@@ -55,7 +55,7 @@ export default createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel: '我的',
                 tabBarIcon: ({focused, tintColor}) => (
-                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/我的.png')}></Image>
+                    <Image style={{width: 30,height: 30, tintColor:tintColor}} source={require('../assest/my.png')}></Image>
                 )
             }
         }
