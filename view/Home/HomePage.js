@@ -3,6 +3,7 @@ import { Text, View, TouchableNativeFeedback,ScrollView ,StyleSheet } from 'reac
 import { withNavigation } from 'react-navigation';
 import HeaderSwpier from '../../components/HomePage/HeaderSwpier';
 import HomeProducers from '../../components/HomePage/HomeProducers';
+import SeckillZoom from '../../components/HomePage/SeckillZoom'
 
 class HomePage extends Component {
     render() {
@@ -12,6 +13,7 @@ class HomePage extends Component {
                 <ScrollView style={styles.headerScrollViewContainer}>
                   <HeaderSwpier />
                   <HomeProducers />
+                  <SeckillZoom />
                 </ScrollView>
             </View>
         )
