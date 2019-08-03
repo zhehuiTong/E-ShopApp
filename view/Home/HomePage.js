@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableNativeFeedback,ScrollView ,StyleSheet } from 'react-native'
-import { withNavigation } from 'react-navigation';
-import HeaderSwpier from '../../components/HomePage/HeaderSwpier';
-import HomeProducers from '../../components/HomePage/HomeProducers';
+import { withNavigation } from 'react-navigation'
+import HeaderSwpier from '../../components/HomePage/HeaderSwpier'
+import HomeProducers from '../../components/HomePage/HomeProducers'
 import SeckillZoom from '../../components/HomePage/SeckillZoom'
+import FreshGoods from '../../components/HomePage/FreshGoods'
 
 class HomePage extends Component {
     render() {
@@ -14,6 +15,7 @@ class HomePage extends Component {
                   <HeaderSwpier />
                   <HomeProducers />
                   <SeckillZoom />
+                  <FreshGoods />
                 </ScrollView>
             </View>
         )
