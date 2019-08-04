@@ -6,6 +6,7 @@ import HomeProducers from '../../components/HomePage/HomeProducers'
 import SeckillZoom from '../../components/HomePage/SeckillZoom'
 import FreshGoods from '../../components/HomePage/FreshGoods'
 import TopicSelection from '../../components/HomePage/TopicSelection'
+import TopicRecommend from '../../components/HomePage/TopicRecommend'
 
 class HomePage extends Component {
     render() {
@@ -17,6 +18,7 @@ class HomePage extends Component {
                   <HomeProducers />
                   <SeckillZoom />
                   <FreshGoods />
+                  <TopicRecommend />
                   <TopicSelection />
                 </ScrollView>
             </View>
