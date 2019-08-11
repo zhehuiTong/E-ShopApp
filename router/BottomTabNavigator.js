@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, View, Text } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 import HomePage from '../view/Home/HomePage'
-import Classification from '../view/Home/Classification'
+import ClassificationNavigator from '../router/MaterialTopTabNavigator'
 import Special from '../view/Home/Special'
 import Evaluate from '../view/Home/Evaluate'
 import My from '../view/Home/My'
@@ -20,7 +20,7 @@ export default createBottomTabNavigator(
             }
         },
         Classification:{
-            screen: Classification,
+            screen: ClassificationNavigator,
             params: { title: '分类' },
             navigationOptions: {
                 tabBarLabel: '分类',

@@ -7,7 +7,7 @@ class FreshGoodsItem extends Component {
     static defaultProps = {
         goodName: '银色星芒刺绣网纱底裤',
         goodDescribe: '薄如蝉翼，丝滑如肌肤',
-        price: '¥99'
+        price: '99'
     }
 
     render() {
