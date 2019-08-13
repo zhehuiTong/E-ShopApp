@@ -27,7 +27,7 @@ class CommonHeaderItem extends Component {
 const styles = StyleSheet.create({
     commonHeaderItemMainContainer: {
         alignItems: 'center',
-        margin: 5,
+        margin: 3,
         width: 80,
         height: 110,
     },
