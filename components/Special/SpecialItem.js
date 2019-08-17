@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, StyleSheet, Dimensions } from 'react-native'
+import { Text, View, Image, TouchableNativeFeedback, StyleSheet, Dimensions } from 'react-native'
 import { withNavigation } from 'react-navigation'
 import AboutSubjectItem from '../Classification/AboutSubjectItem'
 
@@ -15,16 +15,19 @@ class SpecialItem extends Component {
                 </View>
                 <AboutSubjectItem />
                 <View style={styles.specialItemFooterContainer}>
-                    <View style={styles.specialItemWraperContainer}>
-                        <Image style={styles.goodAndLookImg} source={require('../../assest/love.png')} resizeMode={'stretch'}></Image>
-                        <Text style={styles.goodAndLookTxt}>1000</Text>
-                        <Image style={styles.goodAndLookImg} source={require('../../assest/eye.png')} resizeMode={'stretch'}></Image>
-                        <Text style={styles.goodAndLookTxt}>1000</Text>
-                        <View style={styles.specialItemCommentContainer}>
-                            <Image style={styles.goodAndLookImg} source={require('../../assest/comment.png')} resizeMode={'stretch'}></Image>
+                    <TouchableNativeFeedback>
+                        <View style={styles.specialItemWraperContainer}>
+                            <Image style={styles.goodAndLookImg} source={require('../../assest/love.png')} resizeMode={'stretch'}></Image>
                             <Text style={styles.goodAndLookTxt}>1000</Text>
+                            <Image style={styles.goodAndLookImg} source={require('../../assest/eye.png')} resizeMode={'stretch'}></Image>
+                            <Text style={styles.goodAndLookTxt}>1000</Text>
+                            <View style={styles.specialItemCommentContainer}>
+                                <Image style={styles.goodAndLookImg} source={require('../../assest/comment.png')} resizeMode={'stretch'}></Image>
+                                <Text style={styles.goodAndLookTxt}>1000</Text>
+                            </View>
                         </View>
-                    </View>
+                    </TouchableNativeFeedback>
+
                 </View>
             </View>
         )

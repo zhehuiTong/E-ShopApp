@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from 'react-navigation';
 import HomePage from '../view/Home/HomePage'
 import ClassificationNavigator from '../router/MaterialTopTabNavigator'
 import Special from '../view/Special'
-import Evaluate from '../view/Home/Evaluate'
+import Evaluate from '../view/Evaluate'
 import My from '../view/Home/My'
 
 export default createBottomTabNavigator(

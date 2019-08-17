@@ -27,7 +27,7 @@ class HeaderNavItem extends Component {
 const styles = StyleSheet.create({
     headerNavItemMainContainer: {
         alignItems: 'center',
-        width: 100,
+        width: 94,
         height: 110,
     },
     headerNavItemImg: {
